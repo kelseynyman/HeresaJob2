@@ -7,11 +7,6 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <ImageView
-            android:layout_width="54dp"
-            android:layout_height="52dp" app:srcCompat="@android:drawable/ic_menu_camera"
-            android:id="@+id/camera1" android:layout_alignParentEnd="true" android:layout_marginEnd="16dp"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="16dp"/>
     <TextView
             android:text="Welcome to Looky Look!"
             android:layout_width="wrap_content"
@@ -35,23 +30,29 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="248dp"
             android:layout_centerHorizontal="true" android:id="@+id/emailText" android:visibility="visible"
-            android:text="Enter e-mail" android:textColor="@android:color/tertiary_text_light"/>
+            android:text="Enter e-mail" android:textColor="@android:color/tertiary_text_light"
+            android:layout_alignParentTop="true" android:layout_marginTop="238dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="171dp"
-            android:layout_centerHorizontal="true" android:id="@+id/numbertext" android:text="Enter Phone Number"
-            android:textColor="@android:color/tertiary_text_light"/>
+            android:layout_centerHorizontal="true" android:id="@+id/numberText" android:text="Enter Phone Number"
+            android:textColor="@android:color/tertiary_text_light" android:layout_below="@+id/emailText"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPostalAddress"
             android:ems="10"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="94dp"
-            android:layout_centerHorizontal="true" android:id="@+id/adressText" android:text="Enter Postal Address"
-            android:textColor="@android:color/tertiary_text_light"/>
+            android:layout_centerHorizontal="true" android:id="@+id/addressText" android:text="Enter Postal Address"
+            android:textColor="@android:color/tertiary_text_light" android:layout_below="@+id/numberText"/>
+    <Button
+            android:text="Next Page"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextButton" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="75dp" android:background="@android:color/darker_gray"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textAlignment="center"/>
 </RelativeLayout>
