@@ -18,6 +18,13 @@
         </activity>
         <activity android:name=".Main2Activity">
         </activity>
+
+        <uses-library android:name="com.google.android.things"/>
+
+        <activity
+                android:name=".Main3Activity"
+                android:label="@string/title_activity_main3">
+        </activity>
     </application>
 
 </manifest>
