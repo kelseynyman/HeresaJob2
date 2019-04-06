@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMainActivity();
+                openMain3Activity();
             }
         });
 
@@ -38,9 +38,9 @@ public class Main2Activity extends AppCompatActivity {
         });
     }
 
-    private void openMainActivity()
+    private void openMain3Activity()
     {
-        Intent intent1 = new Intent(this, MainActivity.class);
+        Intent intent1 = new Intent(this, Main3Activity.class);
         startActivity(intent1);
     }
 
